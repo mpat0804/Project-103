@@ -1,0 +1,63 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <h1 id="intro" class="btn btn-success">Image Recognition</h1>
+      <br>
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+
+      <br>Dad<br>
+      <hr>
+      <br>Mom<br>
+      <hr>
+      <br>Sister<br>
+      <hr>
+      <br>Brother<br>
+      <hr>
+
+      <label>Webcam View - </label>
+      <div id="camera">
+      </div>
+      <br>
+      <button id="click" class="btn btn-success" onclick="capture()" >Capture Image</button>
+      <hr>
+      <br>
+      <div id="preview">
+
+      </div>
+      <br>
+      <button id="indentify" class="btn btn-success" onclick="check()">Indentify Image</button>
+      <br>
+      <p style="font-size: 22px;">Object :<span id="object"></span>  </p>
+      <p style="font-size: 22px;">Accuracy : <span id="guess"></span>  </p>
+
+      
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

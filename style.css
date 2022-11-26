@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(121, 154, 85);
+}
+#intro{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 50px;
+    width: 300;
+}
+#preview, #camera{
+    border-style:dashed ;
+    border-color: rgb(255, 242, 217);
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+    border-width: 2px;
+}
